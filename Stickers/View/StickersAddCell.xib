@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StickersAddCell" id="gTV-IL-0wX" customClass="StickersAddCell" customModule="Stickers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TmZ-EA-MNd">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-plus-filled" translatesAutoresizingMaskIntoConstraints="NO" id="ffm-3U-Rr1">
+                                <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbb-Z4-Y5m">
+                                <rect key="frame" x="3" y="1" width="12" height="10"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbl-hR-kNo">
+                                        <rect key="frame" x="3.5" y="-1" width="5" height="12"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.62745098040000002" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="2DL-3E-au9"/>
+                                    <constraint firstAttribute="width" constant="12" id="9zm-vB-lEI"/>
+                                    <constraint firstItem="Cbl-hR-kNo" firstAttribute="centerY" secondItem="pbb-Z4-Y5m" secondAttribute="centerY" id="ZeC-9U-yMT"/>
+                                    <constraint firstItem="Cbl-hR-kNo" firstAttribute="centerX" secondItem="pbb-Z4-Y5m" secondAttribute="centerX" id="svl-pl-hLd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ffm-3U-Rr1" secondAttribute="trailing" id="0Bu-l0-gGj"/>
+                            <constraint firstItem="pbb-Z4-Y5m" firstAttribute="leading" secondItem="TmZ-EA-MNd" secondAttribute="leading" constant="3" id="84z-30-IJD"/>
+                            <constraint firstAttribute="bottom" secondItem="ffm-3U-Rr1" secondAttribute="bottom" id="GS0-5J-5LC"/>
+                            <constraint firstItem="ffm-3U-Rr1" firstAttribute="leading" secondItem="TmZ-EA-MNd" secondAttribute="leading" id="R2i-Og-KmG"/>
+                            <constraint firstItem="ffm-3U-Rr1" firstAttribute="top" secondItem="TmZ-EA-MNd" secondAttribute="top" id="hZc-cz-8BO"/>
+                            <constraint firstItem="pbb-Z4-Y5m" firstAttribute="top" secondItem="TmZ-EA-MNd" secondAttribute="top" constant="1" id="tqT-hI-yqg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TmZ-EA-MNd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8Oo-TU-Sz5"/>
+                <constraint firstItem="TmZ-EA-MNd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CAC-mh-fzp"/>
+                <constraint firstAttribute="bottom" secondItem="TmZ-EA-MNd" secondAttribute="bottom" id="GuK-IN-oxV"/>
+                <constraint firstAttribute="trailing" secondItem="TmZ-EA-MNd" secondAttribute="trailing" id="hVq-Gq-5cb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="118" height="115"/>
+            <connections>
+                <outlet property="StickersCellImage" destination="ffm-3U-Rr1" id="NKP-t7-m8I"/>
+                <outlet property="ViewCell" destination="TmZ-EA-MNd" id="Sw5-kP-Ofl"/>
+                <outlet property="numberlabel" destination="Cbl-hR-kNo" id="uky-E7-dOL"/>
+                <outlet property="viewlabelnumber" destination="pbb-Z4-Y5m" id="sF6-AQ-JGz"/>
+            </connections>
+            <point key="canvasLocation" x="97.599999999999994" y="131.33433283358323"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-plus-filled" width="60" height="60"/>
+    </resources>
+</document>

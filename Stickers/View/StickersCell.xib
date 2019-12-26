@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="121" id="KGk-i7-Jjw" customClass="StickersCell" customModule="Stickers" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mkv-Rr-xuP">
+                        <rect key="frame" x="45" y="26" width="275" height="94.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ATe-hT-amh">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSY-uL-3Nn">
+                        <rect key="frame" x="9" y="61.5" width="23" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="D4z-9a-ep6"/>
+                            <constraint firstAttribute="height" constant="24" id="S1m-6s-Cbl"/>
+                        </constraints>
+                        <state key="normal" image="Enter"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حزمة الملصقات 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qny-A5-S96">
+                        <rect key="frame" x="220.5" y="6" width="91.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ملصقات احترافية" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsL-Nf-HE7">
+                        <rect key="frame" x="123" y="7" width="82" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Qny-A5-S96" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="4Zb-vb-KG6"/>
+                    <constraint firstItem="Qny-A5-S96" firstAttribute="leading" secondItem="gsL-Nf-HE7" secondAttribute="trailing" constant="15.5" id="4z5-1c-dpg"/>
+                    <constraint firstAttribute="bottom" secondItem="Mkv-Rr-xuP" secondAttribute="bottom" id="b26-Rx-FPj"/>
+                    <constraint firstItem="Mkv-Rr-xuP" firstAttribute="top" secondItem="Qny-A5-S96" secondAttribute="bottom" constant="4" id="cgN-XW-wJi"/>
+                    <constraint firstItem="gsL-Nf-HE7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="drv-s7-RDW"/>
+                    <constraint firstAttribute="trailing" secondItem="Qny-A5-S96" secondAttribute="trailing" constant="8" id="eqh-cs-ioO"/>
+                    <constraint firstItem="Mkv-Rr-xuP" firstAttribute="leading" secondItem="NSY-uL-3Nn" secondAttribute="trailing" constant="13" id="jRb-cv-yw7"/>
+                    <constraint firstAttribute="trailing" secondItem="Mkv-Rr-xuP" secondAttribute="trailing" id="nV0-yz-pDi"/>
+                    <constraint firstItem="NSY-uL-3Nn" firstAttribute="centerY" secondItem="Mkv-Rr-xuP" secondAttribute="centerY" id="pKp-M7-ogh"/>
+                    <constraint firstItem="NSY-uL-3Nn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="9" id="ro9-XF-Bs1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Collection" destination="Mkv-Rr-xuP" id="tV3-KV-sEh"/>
+                <outlet property="DownloadButton" destination="NSY-uL-3Nn" id="yrW-ox-uQQ"/>
+                <outlet property="Name" destination="gsL-Nf-HE7" id="4Fk-ig-hm2"/>
+                <outlet property="NameStickers" destination="Qny-A5-S96" id="sKU-Eg-kmX"/>
+            </connections>
+            <point key="canvasLocation" x="172.80000000000001" y="34.632683658170919"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Enter" width="512" height="512"/>
+    </resources>
+</document>
